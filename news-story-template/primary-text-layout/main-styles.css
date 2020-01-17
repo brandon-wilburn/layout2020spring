@@ -197,10 +197,6 @@ span ul li {
     font-size: 12px;
 }
 
-.tags:first {
-    color: blue;
-}
-
 .tags:hover {
     opacity: .75;
     cursor: pointer;
@@ -214,7 +210,7 @@ span ul li {
     font-size: 12px;
 }
 
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
     .caption  {
 
     }
@@ -230,7 +226,7 @@ span ul li {
     #date {
         
     }
-}
+} */
 
 @media (min-width: 1000px) {
     .caption  {
@@ -254,13 +250,13 @@ span ul li {
     }
 }
 
+/* Related stories stylings */
+
 #related-stories-container {
     display: flex;
-    /* flex-shrink: 1 0 auto; */
     flex-direction: column;
     padding: 0;
     margin-top: 0px;
-    /* overflow-x: scroll; */
 }
 
 #related-stories-header {
@@ -306,7 +302,6 @@ span ul li {
 
     #related-stories-container {
         display: flex;
-        /* flex-shrink: 1 0 auto; */
         flex-direction: row;
         padding: 0;
         margin-top: 0px;
@@ -328,6 +323,8 @@ span ul li {
         overflow-x: scroll;
     }
 }
+
+/* A line */
 
 .line {
     height: 2px;
