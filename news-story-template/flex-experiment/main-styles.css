@@ -18,7 +18,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(22, 67, 95, .90);
+    background-color: rgba(24, 31, 37, .85);
     padding-bottom: 10px;
     box-sizing: border-box;
     width: 90%;
@@ -97,7 +97,7 @@ body {
 
 .teaser p {
     font-size: 24px;
-    /* font-weight: 800; */
+    font-weight: 800;
     /* font-family: roboto-mono, monospace; */
     line-height: 33px;
 }
@@ -107,6 +107,7 @@ p {
     line-height: 33px;
     margin: 15px 0px 15px 0px;
     opacity: .75;
+    font-weight: 200;
 }
 
 p a {
@@ -117,6 +118,10 @@ p a {
 
 p a:hover {
     opacity: .25;
+}
+
+.body-wrapper li {
+    opacity: .75;
 }
 
 li a {
@@ -150,6 +155,10 @@ span ul li {
         font-size: 24px;
         line-height: 36px;
         margin: 20px 0px 20px 0px;
+    }
+
+    li {
+        font-size: 24px;
     }
 }
 
@@ -404,9 +413,12 @@ span ul li {
 }
 
 .related-story div h3 {
-    font-family: titling-gothic-fb, sans-serif;
+    /* font-family: titling-gothic-fb, sans-serif; */
+    /* font-family: roboto, sans-serif; */
+    font-weight: 800;
     font-size: 14px;
     margin: 5px 0px 10px 0px;
+    opacity: .75;
 }
 
 .related-story:hover {
@@ -457,7 +469,6 @@ span ul li {
     }
 
     .related-story div h3 {
-        font-family: titling-gothic-fb, sans-serif;
         font-size: 18px;
     }
 }
