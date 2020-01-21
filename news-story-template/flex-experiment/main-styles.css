@@ -90,11 +90,13 @@ body {
 /* General body copy stylings */
 
 .teaser {
-    font-family: titling-gothic-fb, sans-serif;
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .teaser p {
-    font-size: 16px;
+    font-size: 24px;
     /* font-weight: 800; */
     /* font-family: roboto-mono, monospace; */
     line-height: 33px;
@@ -145,8 +147,8 @@ span ul li {
     }
 
     p {
-        font-size: 19px;
-        line-height: 32px;
+        font-size: 24px;
+        line-height: 36px;
         margin: 20px 0px 20px 0px;
     }
 }
@@ -402,7 +404,9 @@ span ul li {
 }
 
 .related-story div h3 {
+    font-family: titling-gothic-fb, sans-serif;
     font-size: 14px;
+    margin: 5px 0px 10px 0px;
 }
 
 .related-story:hover {
@@ -450,6 +454,11 @@ span ul li {
         padding: 0;
         margin-top: 0px;
         overflow-x: scroll;
+    }
+
+    .related-story div h3 {
+        font-family: titling-gothic-fb, sans-serif;
+        font-size: 18px;
     }
 }
 
