@@ -15,7 +15,6 @@ body {
 }
 
 .header-wrapper {
-    position: absolute;
     top: 0;
     left: 0;
     background-color: rgba(24, 31, 37, .85);
@@ -24,15 +23,20 @@ body {
     width: 90%;
     padding-left: 10px;
     padding-right: 10px;
+    overflow: auto;
     /* padding-right: 80px; */
 }
 
 .teaser-wrapper {
     padding: 0px 10px;
+    width: 90%;
+    box-sizing: border-box;
 }
 
 .body-wrapper {
     padding: 0px 10px;
+    width: 90%;
+    box-sizing: border-box;
 }
 
 
@@ -70,12 +74,14 @@ body {
     }
 
     .header-wrapper {
+        position: absolute;
         width: calc(100% - 400px);
         padding-right: 40px;
     }
 
     .teaser-wrapper {
         padding: 0px 400px 0px 50px;
+        width: 100%;
     }
     
     .realted-stories-wrapper {
@@ -84,6 +90,7 @@ body {
     
     .body-wrapper {
         padding: 0px 400px 0px 50px;
+        width: 100%;
     }
 }
 
@@ -230,7 +237,7 @@ span ul li {
 /* Story hero image stylings */
 
 .hero-image-wrapper {
-    margin-top: 250px;
+    margin-top: 10px;
 }
 
 #heroImg {
@@ -239,7 +246,6 @@ span ul li {
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding-left: 10px;
 }
 
 #heroImg img {
@@ -494,7 +500,7 @@ span ul li {
     /* margin-left: 50px; */
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1000px) {
     .header-wrapper > .line {
         margin-left: 30px;
         width: calc(100% - 30px);
