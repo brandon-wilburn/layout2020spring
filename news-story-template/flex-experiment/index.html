@@ -20,6 +20,7 @@
         <h4 id="date">{{ story.date }}</h4>
         <span v-for="tag in story.tags" class="tags">{{ tag }}</span>
       </section>
+      
       <!-- Hero Image -->
       <section class="hero-image-wrapper">
         <div id="heroImg"><img v-bind:src="story.image.url"></div>

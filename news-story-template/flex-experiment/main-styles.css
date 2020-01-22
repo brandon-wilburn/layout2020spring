@@ -241,7 +241,7 @@ span ul li {
 }
 
 #heroImg {
-    height: 30%;
+    height: 60vh;
     width: 100%;
     overflow: hidden;
     display: flex;
