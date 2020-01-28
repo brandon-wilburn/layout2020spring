@@ -537,10 +537,8 @@ span ul li {
 }
 
 .related-story-image-wrapper {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     background-color: red;
-    overflow: hidden;
-    box-sizing: border-box;
 }
 
 .related-story-image-wrapper img {
