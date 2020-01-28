@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Transparency</title>
+    <style>[v-cloak] { display: none; }</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/rjo2ssx.css">
+    <link rel="stylesheet" href="main-styles.css" type="text/css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="news-template" v-cloak>
+      
+      <!-- Main Story -->
+      <!-- Header -->
+      <section class="header-wrapper">
+        <h1 class="title">{{ story.title }}</h1>
+        <h2 class="subtitle">{{ story.subtitle }}</h2>
+        <div class="line"></div>
+        <h4 id="date">{{ story.date }}</h4>
+        <span v-for="tag in story.tags" class="tags">{{ tag }}</span>
+      </section>
+      
+      <!-- Hero Image -->
+      <section class="hero-image-wrapper">
+        <div id="heroImg"><img v-bind:src="story.image.url"></div>
+        <h5 class="caption">{{ story.image.caption }}</h5>
+        <a class="source" v-bind:href="story.source.url">{{ story.source.name }}</a>
+      </section>
+      
+      <div class="line"></div>
+
+      <!-- Teaser -->
+      <section class="teaser-wrapper">
+        <span v-html="story.teaser" class="teaser"></span>
+      </section>
+
+      <!-- Body Copy -->
+      <section class="body-wrapper">
+        <span v-html="story.content"></span>
+      </section>
+
+      <!-- Related Stories-->
+      <section class="realted-stories-wrapper">
+        <h4 id="related-stories-header">Related Stories</h4>
+        <div class="line"></div>
+        <ul id="related-stories-container">
+          <li v-for="relatedStory in relatedStories" class="related-story">
+            <div v-on:click="load(relatedStory)">
+              <h3 class="relatedStoryTitle">{{ relatedStory.title }}</h3>
+              <img v-bind:src="relatedStory.image.url">
+            </div>
+          </li>
+        </ul>
+        <div class="line"></div>
+      </section>
+
+      <!-- Useful debugging info, you can comment this section out when you don't need it. -->
+      <!-- <pre>The story object: {{ story | json }}</pre>
+      <pre>The relatedStories array: {{ relatedStories | json }}</pre> -->
+
+    </div>
+
+    <!-- Scripts here are what load the Vue library, and the actual story content. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "entrypoints": [
+    {
+      "name": "Transparency",
+      "file": "index2.html"
+    },
+    {
+      "name": "Side by Side",
+      "file": "index1.html"
+    },
+    {
+      "name": "Minimal",
+      "file": "index3.html"
+    }
+  ]
+}
