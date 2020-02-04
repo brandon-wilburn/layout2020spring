@@ -1,0 +1,16 @@
+{
+  "entrypoints": [
+    {
+      "name": "Transparent",
+      "file": "index2.html"
+    },
+    {
+      "name": "Black",
+      "file": "index1.html"
+    },
+    {
+      "name": "Line",
+      "file": "index3.html"
+    }
+  ]
+}
