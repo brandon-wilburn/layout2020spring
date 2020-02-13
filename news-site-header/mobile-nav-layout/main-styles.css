@@ -411,6 +411,7 @@ span ul li {
     width: 100%;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
     flex: 1 1 auto;
     position: relative;
@@ -460,16 +461,16 @@ span ul li {
     opacity: .95;
     /* margin: 10px 0px 10px 0px; */
     margin: 0;
-    line-height: 24px;
+    /* line-height: 24px; */
     font-size: 14px;
-    padding: 0px 10px;
+    padding: 7px 10px;
     width: 100%;
     box-sizing: border-box;
     background-color: #BBBBB6;
     color: #F8F8F1;
     /* height: 16px; */
     width: 100%;
-    position: absolute;
+    
     bottom: 0;
 }
 
