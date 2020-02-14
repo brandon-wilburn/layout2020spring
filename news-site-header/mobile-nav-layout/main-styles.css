@@ -83,7 +83,10 @@ nav {
     background-color: rgba(255,255,255,.90);
     z-index: 999;
     overflow-y: scroll;
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
 }
 
 nav .close-nav-icon {
@@ -146,24 +149,28 @@ nav ul li:hover {
 }
 
 .stories-nav-list {
+    visibility: hidden;
     display: none;
     opacity: 0;
     transition: opacity .5s ease-in-out;
 }
 
 .account-nav-list {
+    visibility: hidden;
     display: none;
     opacity: 0;
     transition: opacity .5s ease-in-out;
 }
 
 .more-nav-list {
+    visibility: hidden;
     display: none;
     opacity: 0;
     transition: opacity .5s ease-in-out;
 }
 
 .active-list {
+    visibility: visible;
     display: block;
     opacity: 1;
 }

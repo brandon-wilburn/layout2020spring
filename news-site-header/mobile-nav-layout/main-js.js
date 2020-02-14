@@ -51,10 +51,12 @@ more.addEventListener("click", function(){
 var navIcon = document.getElementsByClassName("nav-icon")[0];
 var nav = document.getElementsByTagName("nav")[0];
 navIcon.addEventListener("click", function(){
-    nav.style.display = "block";
+    nav.style.visibility = "visible";
+    nav.style.opacity = "1";
 }, true);
 
 var closeNavIcon = document.getElementsByClassName("close-nav-icon")[0];
 closeNavIcon.addEventListener("click", function(){
-    nav.style.display = "none";
+    nav.style.visibility = "hidden";
+    nav.style.opacity = 0;
 }, true);
