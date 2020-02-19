@@ -57,6 +57,9 @@ navIcon.addEventListener("click", function(){
 
 var closeNavIcon = document.getElementsByClassName("close-nav-icon")[0];
 closeNavIcon.addEventListener("click", function(){
+    moreList.classList.remove("active-list");
+    storiesList.classList.remove("active-list");
+    accountList.classList.remove("active-list");
     nav.style.visibility = "hidden";
     nav.style.opacity = 0;
 }, true);
