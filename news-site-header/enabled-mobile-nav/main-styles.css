@@ -183,7 +183,7 @@ nav ul li {
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
-nav ul li:focus {
+nav ul li:hover {
     background-color: #901F2C;
 }
 
@@ -208,7 +208,7 @@ nav ul li ul li i {
     margin-left: 0;
 }
 
-nav ul li ul li:focus {
+nav ul li ul li:hover {
     background-color: #324F8E;
 }
 
