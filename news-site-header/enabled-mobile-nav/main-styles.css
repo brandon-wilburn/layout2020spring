@@ -163,6 +163,7 @@ nav ul {
     padding: 0;
     text-align: center;
     margin: auto;
+    list-style-type: none;
 }
 
 nav ul li {
@@ -172,7 +173,7 @@ nav ul li {
     text-decoration: none;
     padding: 0;
     background-color: lightgrey;
-    color: white;
+    color: #3A3A3C;
     /* margin-bottom: 5px; */
     font-family: neue-haas-grotesk-display, sans-serif;
     box-sizing: border-box;
