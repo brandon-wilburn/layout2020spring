@@ -285,6 +285,7 @@ nav ul li ul li:hover {
         left: 0;
         z-index: 99;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     .desktop-header form {
