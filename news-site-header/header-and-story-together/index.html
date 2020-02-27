@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minimal</title>
+    <style>[v-cloak] { display: none; }</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/rjo2ssx.css">
+    <script src="https://kit.fontawesome.com/e2c53b87fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main-styles.css" type="text/css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="fixed-nav">
+      <header>
+        <h1>IGD.</h1>
+        <div class="alt-vert-line"></div>
+        <div class="nav-icon"><i class="fas fa-bars"></i></div>
+        <div class="line"></div>
+      </header>
+    </div>
+    <section class="desktop-header">
+      <h1 class="logo">IGD.</h1>
+      <div class="line"></div>
+      <form action="">
+        <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome">
+      </form>
+      <div class="line"></div>
+      <ul>
+        <li><div id="desktop-account"><i class="far fa-user"></i>Account<i class="fas fa-angle-down"></i></div>
+          <ul id="desktop-account-list">
+            <li>Sign In</li>
+            <li>Sign Up</li>
+          </ul>
+        </li>
+        <li><div id="desktop-stories"><i class="far fa-newspaper"></i>Stories<i class="fas fa-angle-down"></i></div>
+          <ul id="desktop-stories-list">
+            <li>US</li>
+            <li>World</li>
+            <li>Politics</li>
+            <li>Business</li>
+            <li>Opinion</li>
+            <li>Health</li>
+            <li>Entertainment</li>
+            <li>Tech</li>
+            <li>Style</li>
+            <li>Travel</li>
+            <li>Sports</li>
+          </ul>
+        </li>
+        <li><div id="desktop-more"><i class="fas fa-ellipsis-h"></i>More<i class="fas fa-angle-down"></i></div>
+          <ul id="desktop-more-list">
+            <li>Coupons</li>
+            <li>Lifestyle</li>
+            <li>Photos</li>
+            <li>Videos</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <nav>
+      <header>
+        <h1>IGD.</h1>
+        <div class="alt-vert-line"></div>
+        <div class="close-nav-icon"><i class="fas fa-times"></i></div>
+        <div class="line"></div>
+      </header>
+      <!-- <h1>IGD.</h1>
+      <div class="alt-vert-line"></div>
+      <div class="close-nav-icon"><i class="fas fa-times"></i></div>
+      <div class="line"></div> -->
+      <ul>
+        <li>
+          <div id="account"><i class="far fa-user"></i>Account<i class="fas fa-angle-down"></i></div>
+          <ul class="account-nav-list">
+            <li><i class="fas fa-sign-in-alt"></i>Sign In</li>
+            <li><i class="fas fa-user-plus"></i>Sign Up</li>
+          </ul>
+        </li>
+        <!-- <div class="line"></div> -->
+        <li>
+          <div id="stories"><i class="far fa-newspaper"></i>Stories<i class="fas fa-angle-down"></i></div>
+          <ul class="stories-nav-list">
+            <li>US</li>
+            <li>World</li>
+            <li>Politics</li>
+            <li>Business</li>
+            <li>Opinion</li>
+            <li>Health</li>
+            <li>Entertainment</li>
+            <li>Tech</li>
+            <li>Style</li>
+            <li>Travel</li>
+            <li>Sports</li>
+          </ul>
+        </li>
+        <!-- <div class="line"></div> -->
+        <li>
+          <div id="more"><i class="fas fa-ellipsis-h"></i>More<i class="fas fa-angle-down"></i></div>
+          <ul class="more-nav-list">
+            <li>Coupons</li>
+            <li>Lifestyle</li>
+            <li>Photos</li>
+            <li>Videos</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="author desktop">
+      <div class="line"></div>
+      <h4 id="author-details-header">Meet the Author</h4>
+      <h4 class="author-name">Ray Gun</h4>
+      <div class="author-image"></div>
+      <div class="author-bio"></div>
+      <p>Through pattern perception, individuals can make sense 
+        of events and develop predictions for the future. For 
+        instance, spontaneous causal attributions (identifying a 
+        cause-and-effect pattern in a sequence of events) are 
+        best predicted by unexpected events rather than negative 
+        ones, suggesting that a major determinant of sense-
+        making behavior is whether an individual lacks control.</p>
+      <div class="line"></div>
+    </section>
+    <div id="news-template" v-cloak>
+    <div class="vert-line"></div>
+      <!-- Main Story -->
+      <!-- Header -->
+      <section class="header-wrapper">
+        <div class="line"></div>
+        <h1 class="title">{{ story.title }}</h1>
+        <div class="line"></div>
+        <div id="heroImg">
+          <img v-bind:src="story.image.url">
+          <h5 class="caption">Lorem ipsum hendrerit blandit enim curabitur pellentesque lacinia, aenean vivamus torquent orci proin.</h5>
+          <div class="tag-container"><span v-for="tag in story.tags" class="tags">{{ tag }}</span></div>
+        </div>
+        <div class="line"></div>
+        <h2 class="subtitle">{{ story.subtitle }}</h2>
+        <h4 id="date">{{ story.date }}</h4>
+        <div class="line"></div>
+        <a class="source" v-bind:href="story.source.url">{{ story.source.name }}</a>
+      </section>
+      <section class="author">
+        <div class="line"></div>
+        <h4 id="author-details-header">Meet the Author</h4>
+        <h4 class="author-name">Ray Gun</h4>
+        <div class="author-image"></div>
+        <div class="author-bio"></div>
+        <p>Through pattern perception, individuals can make sense 
+          of events and develop predictions for the future. For 
+          instance, spontaneous causal attributions (identifying a 
+          cause-and-effect pattern in a sequence of events) are 
+          best predicted by unexpected events rather than negative 
+          ones, suggesting that a major determinant of sense-
+          making behavior is whether an individual lacks control.</p>
+        <div class="line"></div>
+      </section>
+      
+      <!-- Hero Image -->
+      <!-- <section class="hero-image-wrapper">
+        <div id="heroImg"><img v-bind:src="story.image.url"></div>
+        <h5 class="caption">{{ story.image.caption }}</h5>
+        <a class="source" v-bind:href="story.source.url">{{ story.source.name }}</a>
+      </section> -->
+      
+      <!-- <div class="line"></div> -->
+
+      <!-- Teaser -->
+      <section class="teaser-wrapper">
+        <span v-html="story.teaser" class="teaser"></span>
+      </section>
+
+      <!-- Body Copy -->
+      <section class="body-wrapper">
+        <span v-html="story.content"></span>
+      </section>
+
+      <!-- Related Stories-->
+      <section class="realted-stories-wrapper">
+        <h4 id="related-stories-header">Related Stories</h4>
+        <!-- <div class="line"></div> -->
+        <ul id="related-stories-container">
+          <li v-for="relatedStory in relatedStories" class="related-story">
+            <div v-on:click="load(relatedStory)">
+              <div class="line"></div>
+              <h3 class="relatedStoryTitle">{{ relatedStory.title }}</h3>
+              <div class="related-story-image-wrapper">
+                <img v-bind:src="relatedStory.image.url">
+              </div>
+              <div class="line"></div>
+            </div>
+          </li>
+        </ul>
+        <!-- <div class="line"></div> -->
+      </section>
+
+      <!-- Useful debugging info, you can comment this section out when you don't need it. -->
+      <!-- <pre>The story object: {{ story | json }}</pre> -->
+      <!-- <pre>The relatedStories array: {{ relatedStories | json }}</pre> -->
+
+    </div>
+
+    <!-- Scripts here are what load the Vue library, and the actual story content. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+    <script src="main-js.js"></script>
+  </body>
+</html>
