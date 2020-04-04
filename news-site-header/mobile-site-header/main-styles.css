@@ -15,6 +15,7 @@ body {
     /* width: 90vw; */
     width: 100%;
     position: relative;
+    padding-top: 40px;
 }
 
 .header-wrapper {
@@ -67,17 +68,26 @@ header {
     position: relative;
 }
 
+header .line {
+    position: absolute;
+    bottom: -30%;
+    margin: auto;
+    width: calc()
+}
+
 header .nav-icon {
     position: absolute;
     top: -3px;
     right: 0;
     font-size: 36px;
+    opacity: .85;
 }
 
 
 header h1 {
     font-family: neue-haas-grotesk-display, sans-serif;
     margin: 0;
+    opacity: .85;
 }
 
 nav {
@@ -91,8 +101,16 @@ nav {
     overflow-y: scroll;
     /* display: none; */
     visibility: hidden;
+    height: 40px;
     opacity: 0;
     transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+}
+
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #F8F8F1;
+    z-index: 9999;
 }
 
 nav .close-nav-icon {
@@ -100,6 +118,7 @@ nav .close-nav-icon {
     top: -3px;
     right: calc(5% + 3px);
     font-size: 36px;
+    opacity: .85;
 }
 
 nav .close-nav-icon i {
@@ -883,6 +902,28 @@ span ul li {
     margin-top: 5px;
     margin-bottom: 5px;
     /* margin-left: 50px; */
+}
+
+nav .line {
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.alt-vert-line {
+    width: 2px;
+    background-color: black;
+    height: calc(100%);
+    opacity: .25;
+    position: absolute;
+    top: 5px;
+    right: 40px;
+}
+
+nav .alt-vert-line {
+    height: 40px;
+    right: calc(40px + 5%);
 }
 
 @media (min-width: 1000px) {
