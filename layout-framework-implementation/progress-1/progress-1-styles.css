@@ -1,0 +1,17 @@
+@font-face {
+    font-family: monument-reg;
+    src: url(MonumentExtended-Regular.otf);
+}
+
+@font-face {
+    font-family: monument-x-bold;
+    src: url(MonumentExtended-Ultrabold.otf);
+}
+
+/* uk-logo {
+    font-family: monument-reg;
+} */
+
+body {
+    padding: 0px 50px;
+}
