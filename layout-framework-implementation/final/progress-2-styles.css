@@ -1,0 +1,102 @@
+@font-face {
+    font-family: monument-reg;
+    src: url(MonumentExtended-Regular.otf);
+}
+
+@font-face {
+    font-family: monument-x-bold;
+    src: url(MonumentExtended-Ultrabold.otf);
+}
+
+/* uk-logo {
+    font-family: monument-reg;
+} */
+
+body {
+    /* padding: 0px 50px; */
+}
+
+.big-grid {
+    height: 85vh;
+}
+
+.small-grid {
+    margin-top: 0 !important;
+}
+
+.uk-card-hover {
+    transition: transform .5s cubic-bezier(0.6, -0.28, 0.735, 0.045), box-shadow .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    box-shadow: 0px 0px 0px black;
+    transform: scale(1);
+}
+
+.uk-text-secondary {
+    text-shadow: 0px 0px 10px black;
+}
+
+.uk-card-hover:hover {
+    box-shadow: 0px 0px 3px black;
+    cursor: pointer;
+    transform: scale(1.03);
+    z-index: 9999;
+}
+
+.uk-card-secondary-transparent {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 35%) !important;
+}
+
+.greyed-out {
+    opacity: .25;
+    user-select: none;
+}
+
+.greyed-out:hover {
+    cursor: not-allowed;
+}
+
+.hero-img {
+    height: 80vh;
+}
+
+.uk-text-story {
+    font-size: 22px;
+    line-height: 36px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.mobileNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    display: none;
+}
+
+
+/* iPad width & Lower */
+@media only screen and (max-width: 768px) {
+    [class*=uk-child-width]>* {
+      width: 100% !important;
+    }
+
+    .grid-element {
+        height: 350px;
+    }
+
+    .side-grid-container {
+        height: 700px;
+    }
+
+    .big-grid {
+        height: unset;
+    }
+
+    .mobileNav {
+        display: flex;
+    }
+
+    nav {
+        display: none !important;
+    }
+  }
